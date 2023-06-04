@@ -1,0 +1,8 @@
+const palindrome = (str) => {
+  str = str.replace(/[\W_]/g, '');
+  str = str.toLowerCase();
+
+ return str === str.split('').reverse().join('');
+ }
+
+palindrome("A man, a plan, a canal.Panama");
